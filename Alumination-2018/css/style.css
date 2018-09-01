@@ -252,13 +252,28 @@ width: 100%;
 z-index: 0;
 }
 #logoHover{
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
   position: absolute;
   width: 5%;
   height: auto;
   z-index: 6;
   margin-top: 1%;
   margin-left: 2%;
+  cursor: pointer;
 }
+#logoHover:hover ~ #hvrback{
+  z-index: 8;
+}
+#logoHover:hover ~ #hvrbranding{
+  z-index: 8;
+}
+#logoHover:hover ~ #hvrbird{
+  z-index: 8;
+}
+#logoHover:hover ~ #hvrlogo{
+  z-index: 10;}
 #mountain{
 position: absolute;
 left: 0;
@@ -283,13 +298,50 @@ margin: 0 auto;
 margin-top:39%; 
 z-index: 3;}
 #branding{
-position: relative;
+position: absolute;
 top: 0;
 margin-left: 28%;
 margin-top: 10%;
 width: 45%;
 height: auto;
 z-index: 5;}
+#hvrlogo{
+ position: absolute;
+  width: 5%;
+  height: auto;
+  z-index: -1;
+  margin-top: 1%;
+  margin-left: 2%;
+  cursor: pointer; 
+}
+#hvrback{
+ position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+height: auto;
+width: 100%;
+z-index: -1; 
+}
+#hvrbranding{
+position: absolute;
+top: 0;
+margin-left: 28%;
+margin-top: 10%;
+width: 45%;
+height: auto;
+z-index: -1;
+}
+#hvrbird{
+  position: absolute;
+  top: 0;
+  margin-left:67%;
+  margin-top: 7%;
+  width: 20%;
+  height: auto;
+  z-index: -1; 
+}
 #white_treeline{
   top: 0;
   left: 0;
@@ -323,17 +375,25 @@ z-index: 5;}
 #logo{
   position: absolute;
   z-index: 6;
-  margin-top: 46%;  
+  margin-top: 70%;  
   margin-left: 39%;
 }
 #textpg1{
   position: absolute;
   z-index: 6;
-  margin-top: 50%;    
+  margin-top: 74%;    
   float: right;  
   right: 0;
   padding-left: 5%;
   
+}
+@keyframes fade{
+  from{
+    opacity:4;
+  }
+  to{
+    opacity: .4;
+  }
 }
 #cd-vertical-nav {
   position: fixed;
