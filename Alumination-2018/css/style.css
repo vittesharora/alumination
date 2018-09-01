@@ -134,7 +134,7 @@ h1 {
 }
 .button_container span {
   border-radius: 30px;
-  background: #38042c;
+  background: #3AC6F4;
   border: none;
   height: 5px;
   width: 100%;
@@ -167,7 +167,7 @@ h1 {
   opacity: 0.9;
   visibility: visible;
   height: 100%;
-  z-index: 1;
+  z-index: 15;
 }
 .overlay.open li {
   animation: fadeInRight .5s ease forwards;
@@ -326,4 +326,91 @@ z-index: 5;}
   right: 0;
   padding-left: 5%;
   
+}
+#cd-vertical-nav {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+#cd-vertical-nav li {
+  text-align: right;
+}
+#cd-vertical-nav a {
+  display: inline-block;
+  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: visible;
+}
+#cd-vertical-nav a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ #cd-vertical-nav a:hover span {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+ #cd-vertical-nav a:hover .cd-label {
+  opacity: 1;
+}
+#cd-vertical-nav .cd-dot {
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  top: 8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #3AC6F4;
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}/*.cd-dot{
+  position: relative;
+  margin-left: 100px;
+  margin-top: 100px;
+  height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    padding: 10px;
+}*/
+ #cd-vertical-nav a.is-selected .cd-dot {
+  background-color: white;
+}
+#cd-vertical-nav .cd-label {
+  position: relative;
+  margin-right: 10px;
+  padding: .4em .5em;
+  color: white;
+  font-size: 14px;
+  font-size: 0.875rem;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+#cd-vertical-nav li{
+  margin-bottom: 20px;
+}
+#cd-vertical-nav li span{
+  display: inline-block;
 }
