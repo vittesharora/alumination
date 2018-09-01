@@ -1,13 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 body {
   background: #F5F5F5;
+  margin: 0px !important;
 }
+body{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
 .home{
   text-align: center;
   font-family: 'Varela Round', sans-serif;
   height: 100%;
   width: 100%;
   padding: 20px;
+  z-index: -10;
+ 
 }
 .alum{
   text-align: center;
@@ -20,6 +28,8 @@ body {
   color: white;
 }
 .events{
+  margin-top: 300%;
+  position: absolute;
   text-align: center;
   font-family: 'Varela Round', sans-serif;
   height: 100%;
@@ -27,6 +37,8 @@ body {
   padding: 20px;
 }
 .day{
+  margin-top: 85%;
+  position: absolute;
   text-align: center;
   font-family: 'Varela Round', sans-serif;
   height: 100%;
@@ -36,11 +48,18 @@ body {
   color: white;
 }
 .reg{
+  margin-top: 400%;
+  position: absolute;
   text-align: center;
   font-family: 'Varela Round', sans-serif; 
   height: 100%;
   width: 100%;
   padding: 20px;
+}
+.footer{
+  position: absolute;
+  margin-top: 420%;
+  width:auto;
 }
 /*
 .container {
@@ -220,4 +239,91 @@ h1 {
     opacity: 1;
     left: 0;
   }
+}
+/*for cover page*/
+#back{
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+height: auto;
+width: 100%;
+z-index: 0;
+}
+#mountain{
+position: absolute;
+left: 0;
+right: 0;
+width: 100%;
+height: auto;
+margin-top: 35%;
+z-index: 1;
+}
+#treeline{
+position: absolute;
+left: 0;
+right: 0;
+margin-top: 28%;
+z-index: 2;}
+#bird{
+position: absolute;
+left: 0;
+right: 0;
+width: 45%;
+margin: 0 auto;
+margin-top:39%; 
+z-index: 3;}
+#branding{
+position: relative;
+top: 0;
+margin-left: 28%;
+margin-top: 10%;
+width: 45%;
+height: auto;
+z-index: 5;}
+#white_treeline{
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:5;
+  margin-top: 55%; 
+  position: absolute;
+  width: 100%;
+}
+#blue_treeline{
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:6;
+  margin-top: 55%; 
+  position: absolute;
+  width: 100%;
+}
+#bird2{
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:5;
+  margin-top: 75%; 
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+#logo{
+  position: absolute;
+  z-index: 6;
+  margin-top: 46%;  
+  margin-left: 39%;
+}
+#textpg1{
+  position: absolute;
+  z-index: 6;
+  margin-top: 50%;    
+  float: right;  
+  right: 0;
+  padding-left: 5%;
+  
 }
