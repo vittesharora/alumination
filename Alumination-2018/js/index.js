@@ -6,6 +6,23 @@ $('.new_tog').click(function(){
   $('#toggle').toggleClass('active');
   $('#overlay').toggleClass('open');
 });
+
+
+// for not displaying interactive scroller on front page
+document.getElementById("cd-vertical-nav").style.right = "-200px";
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if ( currentScrollPos>450) {
+    document.getElementById("cd-vertical-nav").style.right = "2.75%";
+  } else {
+    document.getElementById("cd-vertical-nav").style.right = "-200px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+
 jQuery(document).ready(function($){
 	var contentSections = $('.cd-section'),
 		navigationItems = $('#cd-vertical-nav a');
@@ -56,3 +73,23 @@ jQuery(document).ready(function($){
 	}
 });
 
+(function() {
+  // Tutorial: https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27
+  window.addEventListener('scroll', function(event) {
+    var depth, i, layer, layers, len, movement, topDistance, translate3d;
+    topDistance = this.pageYOffset;
+    layers = document.querySelectorAll("[data-type='parallax']");
+    for (i = 0, len = layers.length; i < len; i++) {
+      layer = layers[i];
+      depth = layer.getAttribute('data-depth');
+      movement = -(topDistance * depth);
+      translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+      layer.style['-webkit-transform'] = translate3d;
+      layer.style['-moz-transform'] = translate3d;
+      layer.style['-ms-transform'] = translate3d;
+      layer.style['-o-transform'] = translate3d;
+      layer.style.transform = translate3d;
+    }
+  });
+
+}).call(this);

@@ -1,3 +1,4 @@
+@import "compass/css3";
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 body {
   background: #F5F5F5;
@@ -422,11 +423,11 @@ z-index: -1;
   clear: both;
 }
  #cd-vertical-nav a:hover span {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
 }
  #cd-vertical-nav a:hover .cd-label {
   opacity: 1;
@@ -461,9 +462,10 @@ z-index: -1;
 }
 #cd-vertical-nav .cd-label {
   position: relative;
-  margin-right: 10px;
+ /* margin-right: 10px;*/
+  top: 5px;
   padding: .4em .5em;
-  color: white;
+  color: #3AC6F4;
   font-size: 14px;
   font-size: 0.875rem;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
@@ -481,4 +483,7 @@ z-index: -1;
 }
 #cd-vertical-nav li span{
   display: inline-block;
+}
+#cd-vertical-nav{
+  transition:all 0.2s ease 0.2s;
 }
