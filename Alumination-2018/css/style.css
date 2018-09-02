@@ -376,8 +376,9 @@ z-index: -1;
 #logo{
   position: absolute;
   z-index: 6;
-  margin-top: 70%;  
-  margin-left: 39%;
+  margin-top: 75%;  
+  margin-left: 42%;
+  width: 13%;
 }
 #textpg1{
   position: absolute;
