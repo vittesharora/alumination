@@ -609,36 +609,43 @@ h1{
   color: #3ac6f4;
   font-size: 30px;
   font-family: Poppins-bold;
+  opacity:0.6;
+
 }
 #item_three{
   margin: 20px;
   color: #3ac6f4;
   font-size: 30px;
   font-family: Poppins-bold;
+  opacity:0.6;
 }
 #item_four{
   margin: 20px;
   color: #3ac6f4;
   font-size: 30px;
   font-family: Poppins-bold;
+  opacity:0.6;
 }
 #item_five{
   margin: 20px;
   color: #3ac6f4;
   font-size: 30px;
   font-family: Poppins-bold;
+  opacity:0.6;
 }
 #item_six{
   margin: 20px;
   color: #3ac6f4;
   font-size: 30px;
   font-family: Poppins-bold;
+  opacity:0.6;
 }
 #item_one{
   margin: 20px;
   color: #3ac6f4;
   font-size: 30px;
   font-family: poppins-bold;
+  opacity:.6;
 }
 #desc2{
   opacity: 0;
@@ -718,4 +725,22 @@ h1{
 }
 #it6_desc{
   opacity: .6;
+}
+#item_one:hover{
+  opacity: 2;
+}
+#item_two:hover{
+  opacity: 2;
+}
+#item_three:hover{
+  opacity: 2;
+}
+#item_four:hover{
+  opacity: 2;
+}
+#item_five:hover{
+  opacity: 2;
+}
+#item_six:hover{
+  opacity: 2;
 }
