@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://coolcarousels.frebsite.nl/c/64/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><!--
+
+Cool Carousels	(c) 2018 Fred Heusschen
+
+--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="author" content="Fred Heusschen">
+		<meta name="robots" content="index,follow">
+		<meta name="description" content="This carousel imitates a tabs container using the pagination for the large tabs on the left of the container. The selected tab is transparent, showing a part of the container that is otherwise hidden behind the tabs.">
+		<meta name="keywords" content="tabs, container, jquery, pagination, tabcontainer, example">
+
+		<link rel="shortcut icon" type="images/ico" href="https://coolcarousels.frebsite.nl/favicon.ico">
+	
+		<title>Tabs container with large tabs on the left of the container</title>
+		
+		<link rel="stylesheet" type="text/css" media="all" href="./carousel_files/reset.css">
+		<link rel="stylesheet" type="text/css" media="all" href="./carousel_files/style.css">
+		<link rel="stylesheet" type="text/css" media="all" href="./carousel_files/layout.css">
+		<link rel="stylesheet" type="text/css" media="all" href="./carousel_files/prettify-sunburst-customized.css">
+		<script type="text/javascript" src="./carousel_files/jquery.js.download"></script>
+		<script type="text/javascript" src="./carousel_files/jquery.carouFredSel.js.download"></script>
+		<script type="text/javascript" src="./carousel_files/site.js.download"></script>
+		<script type="text/javascript" src="./carousel_files/prettify.js.download"></script>
+		<script type="text/javascript" src="./carousel_files/prettify.css.js.download"></script>
+		<script type="text/javascript">
+			$(function() {
+				prettyPrint();
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('#carousel').carouFredSel({
+					direction: 'up',
+					auto: false,
+					scroll: {
+						duration: 1000
+					},
+					pagination: {
+						container: '#pager',
+						anchorBuilder: function() {
+							return '<a href="#">'+ this.alt +'</a>';
+						}
+					}
+				});
+			});
+		</script>
+		<style type="text/css" media="all">
+			html, #c-carousel {
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+			#c-carousel {
+				background: #222;
+				min-height: 600px;
+			}
+			#c-carousel * {
+				font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+				font-size: 14px;
+				color: #666;
+				line-height: 22px;
+			}
+			
+			#wrapper {
+				background: yellow;
+				box-shadow: 0 0 10px #000;
+				width: 700px;
+				height: 350px;
+				padding: 30px;
+				margin: -205px 0 0 -380px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+			}
+			#carousel {
+				width: 700px;
+				height: 350px;
+				overflow: hidden;
+			}
+			#carousel img {
+				display: block;
+				margin-left: 200px;
+			}
+			#pager {
+				width: 200px;
+				position: absolute;
+				top: 30px;
+				left: 30px;
+			}
+			#pager a {
+				font-family: Impact, Verdana, Arial, sans-serif;
+				font-weight: bold;
+				font-size: 35px;
+				line-height: 35px;
+				color: #000;
+				text-decoration: none;
+				background: #666;
+				display: block;
+				height: 76px;
+				margin: 0px;
+				margin-bottom: 41px;
+			}
+			#pager a:hover {
+				color: #111;
+				
+			}
+			#pager a.selected {
+				/*transform: translateX(20px);*/
+				animation-name:move;
+				animation-timing-function: linear;	
+				animation-duration: 1.5s;
+				animation-iteration-count: infinite; 
+				
+			}
+			@keyframes move{ 
+				25%{transform: translateX(10px);}
+				50%{transform: translateX(20px);}
+				75%{transform: translateX(10px);}
+				100%{transform: translateX(0px);}
+			}
+						
+			
+		</style>
+	</head>
+	<body>
+		<div id="c-carousel">
+		<div id="wrapper">
+			<div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 700px; height: 350px; margin: 0px; overflow: hidden;"><div id="carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; height: 2450px; width: 700px;">
+				<img src="./carousel_files/cod.jpg" alt="<img src='day0.jpg' width='200' height='116.2'>" width="500" height="350">
+				<img src="./carousel_files/mgs.jpg" alt="<img src='day1.jpg' width='200' height='116.2'>" width="500" height="350">
+				<img src="./carousel_files/gta.jpg" alt="<img src='day2.jpg' width='200' height='116.2'>" width="500" height="350">
+			</div></div>
+			<div id="pager" class="" style="display: block;"><a href="https://coolcarousels.frebsite.nl/c/64/#" class="selected">Call Of Duty</a><a href="https://coolcarousels.frebsite.nl/c/64/#">Metal Gear Solid</a><a href="https://coolcarousels.frebsite.nl/c/64/#">Grand Theft Auto</a></div>
+		</div>
+
+		
+		</div> <!-- /c-carousel -->
+		
+</body></html>
