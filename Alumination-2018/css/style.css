@@ -64,9 +64,13 @@ body{
   padding: 20px;
 }
 .footer{
-  position: absolute;
-  margin-top: 420%;
-  width:auto;
+  position: relative;
+  margin-top: 450%;
+  /*width:auto;*/
+  background-color: black; 
+  color: white;
+  text-align: center; 
+  font-family: 'Varela Round', sans-serif;
 }
 /*
 .container {
@@ -424,6 +428,7 @@ z-index: -1;
   /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
   -webkit-backface-visibility: hidden;
   backface-visibility: visible;
+  text-decoration: none;
 }
 #cd-vertical-nav a:after {
   content: "";
@@ -744,3 +749,13 @@ h1{
 #item_six:hover{
   opacity: 2;
 }
+.reg img{
+  padding-top: 50px;
+  height: 50%;
+  width: 50%;
+} 
+/*.reg img a:hover{
+  padding-top: 50px;
+  height: 50%;
+  width: 50%;
+}*/
