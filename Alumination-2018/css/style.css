@@ -36,7 +36,7 @@ body{
 }
 .events{
   margin-top: 83%;
-  position: absolute;
+  position: relative;
   text-align: center;
   font-family: 'poppins-bold', sans-serif;
   height: 100%;
@@ -44,8 +44,8 @@ body{
   padding: 20px;
 }
 .day{
-  margin-top: 200%;
-  position: absolute;
+  margin-top: 50%;
+  position: relative;
   text-align: center;
   font-family: 'Varela Round', sans-serif;
   height: 100%;
@@ -55,8 +55,8 @@ body{
   color: white;
 }
 .reg{
-  margin-top: 400%;
-  position: absolute;
+  margin-top: 0;
+  position: relative;
   text-align: center;
   font-family: 'Varela Round', sans-serif; 
   height: 100%;
@@ -65,7 +65,7 @@ body{
 }
 .footer{
   position: relative;
-  margin-top: 450%;
+  margin-top: 0%;
   /*width:auto;*/
   background-color: black; 
   color: white;
@@ -502,11 +502,11 @@ z-index: -1;
 }
 /*EVENTS PAGE STYLING*/
 
-.items{
+/*.items{
   background-color: yellow;
   
-  /*float: left;*/
-}
+  /*float: left;
+}*/
 
 
 #item2{
@@ -564,13 +564,13 @@ z-index: -1;
   text-align:left;
   opacity: 1;} 
 .list_item{
-  position: absolute;
+ /* position: absolute;*/
   background-color: #051932;
-  height: 600px;
-  margin-left: 55%;
+  height: auto;
   margin-top: -7%;
-  width: 500px;
+  width: auto;
   cursor: pointer;
+  margin-left: 800px;
 }
 
 .container{
@@ -656,47 +656,53 @@ h1{
   opacity: 0;
 }
 .list_item ul{
+  padding-right: 10px;
   list-style: none;
+  float: right;
+  text-align: left;
 }
 
 #ev1{
-  position: absolute;
+  /*position: absolute;*/
   height: 30px;
-  float: left;
-  width: 30px;
+    width: 30px;
+    float
+:left;
 }
 #ev2{
-  position: absolute;
-  float: left;
-  height: 30px;
+  /*position: absolute;*/
+    height: 30px;
   width: 30px;
+  float:left;
 }
 #ev3{
-  position: absolute;
-  float: left;
-  height: 30px;
+ /*
+ */
+    height: 30px;
   width: 30px;
+  float:left;
 }
 #ev4{
-  position: absolute;
-  float: left;
-  height: 30px;
+ /* position: absolute;*/
+    height: 30px;
   width: 30px;
+  float:left;
 }
 #ev5{
-  position: absolute;
-  float: left;
+ /* position: absolute;*/
+ 
   height: 30px;
   width: 30px;
+  float:left;
 }
 #ev6{
-  position: absolute;
-  float: left;
-  height: 30px;
+  /*position: absolute;*/
+    height: 30px;
   width: 30px;
+  float: left;
 }
 #eventshead{
-  position: absolute;
+ /* position: absolute;*/
   font-size: 80px;
   margin-left: 8%;
   margin-top: -8%;
@@ -753,9 +759,80 @@ h1{
   padding-top: 50px;
   height: 50%;
   width: 50%;
+  opacity: 0.5;
 } 
-/*.reg img a:hover{
-  padding-top: 50px;
-  height: 50%;
-  width: 50%;
+.show_name{
+ /* visibility: hidden;*/
+ opacity: 0;
+}
+#reg_works img:hover{
+  opacity: 2;
+}
+#reg_speed img:hover{
+  opacity: 2;
+}
+#reg_mi img:hover{
+  opacity: 2;
+}
+#text_works{
+  padding: 20px;
+ opacity: 0;
+ color: white;
+ text-decoration: none;
+ font-family: poppins-bold;
+}
+#text_speed{
+ padding: 20px;
+ opacity: 0;
+ color: white;
+ text-decoration: none;
+ font-family: poppins-bold;
+}
+#text_mi{
+ padding: 20px;
+ opacity: 0;
+ color: white;
+ text-decoration: none;
+ font-family: poppins-bold;
+}
+.row a{
+   text-decoration: none;
+}
+/*#text_works {
+  text-decoration: none;
+}
+#text_speed {
+  text-decoration: none;
+}
+#text_mi {
+text-decoration: none;
 }*/
+#reg_works img:hover ~ #text_works{
+  opacity: 2;
+}
+#reg_speed img:hover ~ #text_speed{
+  opacity: 2;
+}
+#reg_mi img:hover ~ #text_mi{
+  opacity: 2;
+}
+
+/*.reg img:hover #text_wk{
+  opacity: 2;
+}*/
+.wtpattern{
+
+    opacity: 1;
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*#reg_works img:hover .show_name{
+  opacity: 1;
+}
+*/
