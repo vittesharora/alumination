@@ -9,6 +9,10 @@ body {
   background: #F5F5F5;
   margin: 0px !important;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
 body{
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -20,7 +24,6 @@ body{
   font-family: 'Varela Round', sans-serif;
   height: 100%;
   width: 100%;
-  padding: 20px;
   z-index: -10;
  
 }
@@ -30,7 +33,6 @@ body{
  /* position: relative;*/
   height: 100%;
   width: 100%;
-  padding: 20px;
   background-color: black;
   color: white;
 }
@@ -50,7 +52,6 @@ body{
   font-family: 'Varela Round', sans-serif;
   height: 100%;
   width: 100%;
-  padding: 20px;
   background-color: black;
   color: white;
 }
@@ -61,7 +62,6 @@ body{
   font-family: 'Varela Round', sans-serif; 
   height: 100%;
   width: 100%;
-  padding: 20px;
 }
 .footer{
   position: relative;
@@ -72,45 +72,7 @@ body{
   text-align: center; 
   font-family: 'Varela Round', sans-serif;
 }
-/*
-.container {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  top: 40%;
-  left: 0;
-  margin: 0 auto;
-  font-family: 'Varela Round', sans-serif;
-}
-.container p {
-  font-size: 20px;
-}
-.container a {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #38042c;
-  text-decoration: none;
-  font-size: 20px;
-  overflow: hidden;
-  top: 5px;
-}
-.container a:after {
-  content: '';
-  position: absolute;
-  background: #38042c;
-  height: 2px;
-  width: 0%;
-  transform: translateX(-50%);
-  left: 50%;
-  bottom: 0;
-  transition: .35s ease;
-}
-.container a:hover:after, .container a:focus:after, .container a:active:after {
-  width: 100%;
-}
-*/
+
 h1 {
   position: relative;
   text-align: center;
@@ -502,13 +464,6 @@ z-index: -1;
 }
 /*EVENTS PAGE STYLING*/
 
-/*.items{
-  background-color: yellow;
-  
-  /*float: left;
-}*/
-
-
 #item2{
   background-color:#051932;
   height: 600px;
@@ -817,11 +772,7 @@ text-decoration: none;
   opacity: 2;
 }
 
-/*.reg img:hover #text_wk{
-  opacity: 2;
-}*/
 .wtpattern{
-
     opacity: 1;
     height: 100%;
     /* Center and scale the image nicely */
@@ -830,9 +781,11 @@ text-decoration: none;
     background-size: cover;
 }
 
-
-
-/*#reg_works img:hover .show_name{
-  opacity: 1;
+.footer .row {
+    margin-left:0;
+    margin-right:0;
 }
-*/
+
+.footer .row .col-sm-4{
+    padding:0;
+}
