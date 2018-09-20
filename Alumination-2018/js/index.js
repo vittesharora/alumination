@@ -124,12 +124,12 @@ $(document).ready(function(){
             'animation':'move .6s',
             'transform':'translateY(20px)'
         });
-        $('#item1').fadeIn(1000);
-        $('#item2').fadeOut(1000);
-        $('#item3').fadeOut(1000);
-        $('#item4').fadeOut(1000);
-        $('#item5').fadeOut(1000);
-        $('#item6').fadeOut(1000);   
+        $('#item1').fadeIn(100);
+        $('#item2').fadeOut(100);
+        $('#item3').fadeOut(100);
+        $('#item4').fadeOut(100);
+        $('#item5').fadeOut(100);
+        $('#item6').fadeOut(100);   
     });
      $("#item_two").click(function(){
         $("#item1").css({
@@ -158,12 +158,12 @@ $(document).ready(function(){
             'transform':'translateY(20px)'
         });
     
-      $('#item2').fadeIn(1000);
-        $('#item1').fadeOut(1000);
-        $('#item3').fadeOut(1000);
-         $('#item4').fadeOut(1000);
-        $('#item5').fadeOut(1000);
-         $('#item6').fadeOut(1000);
+      $('#item2').fadeIn(100);
+        $('#item1').fadeOut(100);
+        $('#item3').fadeOut(100);
+         $('#item4').fadeOut(100);
+        $('#item5').fadeOut(100);
+         $('#item6').fadeOut(100);
         
 });
      $("#item_three").click(function(){
@@ -191,12 +191,12 @@ $(document).ready(function(){
             'transform':'translateY(20px)'
         });
         
-        $('#item3').fadeIn(1000);
-        $('#item1').fadeOut(1000);
-        $('#item2').fadeOut(1000);
-        $('#item4').fadeOut(1000);
-        $('#item5').fadeOut(1000);
-        $('#item6').fadeOut(1000);  
+        $('#item3').fadeIn(100);
+        $('#item1').fadeOut(100);
+        $('#item2').fadeOut(100);
+        $('#item4').fadeOut(100);
+        $('#item5').fadeOut(100);
+        $('#item6').fadeOut(100);  
     });
      $("#item_four").click(function(){
         $("#item1").css({
@@ -223,12 +223,12 @@ $(document).ready(function(){
             'transform':'translateY(20px)'
         });
         
-        $('#item4').fadeIn(1000);
-        $('#item1').fadeOut(1000);
-        $('#item2').fadeOut(1000);
-        $('#item3').fadeOut(1000);
-        $('#item5').fadeOut(1000);
-        $('#item6').fadeOut(1000);  
+        $('#item4').fadeIn(100);
+        $('#item1').fadeOut(100);
+        $('#item2').fadeOut(100);
+        $('#item3').fadeOut(100);
+        $('#item5').fadeOut(100);
+        $('#item6').fadeOut(100);  
     });
      $("#item_five").click(function(){
         $("#item1").css({
@@ -255,12 +255,12 @@ $(document).ready(function(){
             'transform':'translateY(20px)'
         });
         
-        $('#item5').fadeIn(1000);
-        $('#item1').fadeOut(1000);
-        $('#item2').fadeOut(1000);
-        $('#item4').fadeOut(1000);
-        $('#item3').fadeOut(1000);
-        $('#item6').fadeOut(1000);  
+        $('#item5').fadeIn(100);
+        $('#item1').fadeOut(100);
+        $('#item2').fadeOut(100);
+        $('#item4').fadeOut(100);
+        $('#item3').fadeOut(100);
+        $('#item6').fadeOut(100);  
     }); 
      $("#item_six").click(function(){
         $("#item1").css({
@@ -287,12 +287,12 @@ $(document).ready(function(){
             'transform':'translateY(20px)'
         });
         
-        $('#item6').fadeIn(1000);
-        $('#item1').fadeOut(1000);
-        $('#item2').fadeOut(1000);
-        $('#item4').fadeOut(1000);
-        $('#item5').fadeOut(1000);
-        $('#item3').fadeOut(1000);  
+        $('#item6').fadeIn(100);
+        $('#item1').fadeOut(100);
+        $('#item2').fadeOut(100);
+        $('#item4').fadeOut(100);
+        $('#item5').fadeOut(100);
+        $('#item3').fadeOut(100);  
     }); 
      });
 //transition
