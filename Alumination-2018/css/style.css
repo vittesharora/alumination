@@ -13,6 +13,9 @@ body {
   background-color: #051932;
 }
 
+::-webkit-scrollbar{
+    display:none;
+}
 .home{
   text-align: center;
   font-family: 'Varela Round', sans-serif;
