@@ -8,8 +8,6 @@
 body {
   background: #F5F5F5;
   margin: 0px !important;
-}
-body{
   padding-left: 0px !important;
   padding-right: 0px !important;
   background-color: #051932;
@@ -22,12 +20,11 @@ body{
   width: 100%;
   padding: 20px;
   z-index: -10;
- 
 }
+
 .alum{
   text-align: center;
   font-family: 'Varela Round', sans-serif;
- /* position: relative;*/
   height: 100%;
   width: 100%;
   padding: 20px;
@@ -75,45 +72,7 @@ body{
   text-align: center; 
   font-family: 'Varela Round', sans-serif;
 }
-/*
-.container {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  top: 40%;
-  left: 0;
-  margin: 0 auto;
-  font-family: 'Varela Round', sans-serif;
-}
-.container p {
-  font-size: 20px;
-}
-.container a {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #38042c;
-  text-decoration: none;
-  font-size: 20px;
-  overflow: hidden;
-  top: 5px;
-}
-.container a:after {
-  content: '';
-  position: absolute;
-  background: #38042c;
-  height: 2px;
-  width: 0%;
-  transform: translateX(-50%);
-  left: 50%;
-  bottom: 0;
-  transition: .35s ease;
-}
-.container a:hover:after, .container a:focus:after, .container a:active:after {
-  width: 100%;
-}
-*/
+
 h1 {
   position: relative;
   text-align: center;
@@ -129,7 +88,6 @@ h1 {
   cursor: pointer;
   z-index: 100;
   transition: opacity .25s ease;
-  /*opacity: .4;*/
 }
 .button_container:hover {
   opacity: 1;
@@ -465,21 +423,12 @@ z-index: -1;
   -ms-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-}/*.cd-dot{
-  position: relative;
-  margin-left: 100px;
-  margin-top: 100px;
-  height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    padding: 10px;
-}*/
- #cd-vertical-nav a.is-selected .cd-dot {
+}
+#cd-vertical-nav a.is-selected .cd-dot {
   background-color: white;
 }
 #cd-vertical-nav .cd-label {
   position: relative;
- /* margin-right: 10px;*/
   top: 5px;
   padding: .4em .5em;
   color: #3AC6F4;
@@ -504,14 +453,6 @@ z-index: -1;
 #cd-vertical-nav{
   transition:all 0.2s ease 0.2s;
 }
-/*EVENTS PAGE STYLING*/
-
-/*.items{
-  background-color: yellow;
-  
-  /*float: left;
-}*/
-
 
 #item2{
   background-color:#051932;
@@ -568,7 +509,6 @@ z-index: -1;
   text-align:left;
   opacity: 1;} 
 .list_item{
- /* position: absolute;*/
   background-color: #051932;
   height: auto;
   margin-top: -7%;
