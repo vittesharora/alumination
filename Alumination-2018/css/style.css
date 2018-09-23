@@ -710,6 +710,7 @@ h1{
   width: 50%;
   opacity: 0.5;
   z-index: 5;
+  transition: 0.5s ease-out;
 } 
 .show_name{
  /* visibility: hidden;*/
@@ -730,6 +731,7 @@ h1{
  color: white;
  text-decoration: none;
  font-family: poppins-bold;
+ transition: 0.5s ease-out;
 }
 #text_speed{
  padding: 20px;
@@ -737,6 +739,7 @@ h1{
  color: white;
  text-decoration: none;
  font-family: poppins-bold;
+ transition: 0.5s ease-out;	
 }
 #text_mi{
  padding: 20px;
@@ -744,6 +747,7 @@ h1{
  color: white;
  text-decoration: none;
  font-family: poppins-bold;
+ transition: 0.5s ease-out;
 }
 .row a{
    text-decoration: none;
