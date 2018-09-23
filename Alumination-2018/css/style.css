@@ -441,6 +441,7 @@ z-index: -5;
   color: #3AC6F4;
   font-size: 14px;
   font-size: 0.875rem;
+  font-family: poppins-bold;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
