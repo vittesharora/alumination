@@ -70,9 +70,11 @@ body {
 .footer{
   position: relative;
   margin-top: 0%;
-  background-color: black; 
+  background-color: #fff; 
   color: white;
-  text-align: center; 
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -286,7 +288,7 @@ margin-right: 27.5%;
 margin-top: 10%;
 width: 45%;
 height: auto;
-z-index: 5;}
+z-index: 3;}
 #hvrlogo{
  position: absolute;
   width: 5%;
@@ -707,6 +709,7 @@ h1{
   height: 50%;
   width: 50%;
   opacity: 0.5;
+  z-index: 5;
 } 
 .show_name{
  /* visibility: hidden;*/
@@ -759,18 +762,10 @@ h1{
   	margin-top: -8%;
     position: relative;
     height: 100%;
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #051932;
-}
-.btn:hover {
-  background: #051932;
-}
-.btn {
-  background: black;
-  color: white;
 }
 .contacts_container {
   position: fixed;
@@ -821,19 +816,21 @@ h1{
 }
 .overlay_2 {
   position: fixed;
-  background: #38042c;
+  background: #051932;
   top: 0;
   left: 0;
   width: 100%;
   height: 0%;
   opacity: 0;
+  padding-right: 10%;
+  padding-left: 10%;
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
   overflow-y: scroll;
-     top: 0; left: 0; right: 0; bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
 }
 .overlay_2.open {
-  opacity: 0.9;
+  opacity: 1;
   visibility: visible;
   height: 100%;
   z-index: 105;
@@ -854,7 +851,7 @@ h1{
 .overlay_2 nav {
   position: relative;
   height: 70%;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   font-size: 50px;
   font-family: 'Varela Round', serif;
@@ -864,21 +861,17 @@ h1{
 
 .white_bg{
   background-color: white;
-  height: 200%;
-  width: auto;
-  padding: 10%;
-  margin: 5%;
+  width: 241px;
+  padding: 4%;
 }
 .img_here{
   background-color: black;
-  padding: 10%;
+
 }
 .contacts_head{
   color: white;
   font-family: 'poppins-bold', sans-serif;
-  font-size: 35px;
-  padding: 20px;
-  background-color: black;
+  font-size:70px;
 }
 /*schedule styling*/
 .caro{
@@ -916,4 +909,45 @@ h1{
   margin-top: 38%;
   margin-left: -38%;
   height: 20%;
+}
+
+.contact_board{
+  width: 50%;
+  margin: 10%;
+}
+
+.contact_board img{
+  left:0;
+}
+
+.overlay-menu_2 .row:nth-of-type(3) .contact_board{
+  width: 75%;
+  margin: 10%;
+}
+
+.img_here img{
+  width: 100%;
+}
+.overlay-menu_2 .row{
+  margin-bottom: 5%;
+}
+.overlay-menu_2 .row:nth-of-type(1){
+  margin-bottom: 0;
+}
+.content_contact{
+  font-family: "poppins-bold", sans-serif;
+  font-size: 18px;
+}
+
+.content_contact h4{
+  margin:0;
+}
+
+.content_contact p{
+  margin:0;
+  font-size: 15px;
+}
+
+.col-sm-4{
+  font-family: "poppins-bold", sans-serif;
 }
