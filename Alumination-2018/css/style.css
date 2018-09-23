@@ -19,40 +19,39 @@ body {
 .home{
   text-align: center;
   font-family: 'Varela Round', sans-serif;
-  height: 100%;
   width: 100%;
-  padding: 20px;
+  height: 768px;
   z-index: -10;
 }
-
 .alum{
   text-align: center;
   font-family: 'Varela Round', sans-serif;
-  height: 100%;
+  height: 768px;
   width: 100%;
-  padding: 20px;
-  background-color: black;
+  position: relative;
+  background-color: #051932;
   color: white;
 }
 .events{
-  margin-top: 82%;
+  margin-top: -15%;
   position: relative;
   text-align: center;
   font-family: 'poppins-bold', sans-serif;
-  height: 100%;
   width: 100%;
-  padding: 20px;
+  padding-bottom: 12%;
+  padding-right: 10%;
+  padding-left:10%;
+  background-color: #051932;
 }
 .day{
-  margin-top: 25%;
+  padding-top: 5%;
   position: relative;
   text-align: center;
   font-family: 'Varela Round', sans-serif;
-  height: 100%;
   width: 100%;
-  padding: 20px;
-  
+  background-color: #051932;
   color: white;
+  z-index:1;
 }
 .day h1{
   font-size: 60px;
@@ -62,18 +61,23 @@ body {
   position: relative;
   text-align: center;
   font-family: 'Varela Round', sans-serif; 
-  height: 100%;
   width: 100%;
-  padding: 20px;
+  padding-right:10%;
+  padding-left:10%;
+  background-color: #051932;
+  z-index: 1;
 }
 .footer{
   position: relative;
   margin-top: 0%;
-  /*width:auto;*/
   background-color: black; 
   color: white;
   text-align: center; 
   font-family: 'Varela Round', sans-serif;
+}
+
+.footer .row{
+	margin:0;
 }
 
 h1 {
@@ -128,7 +132,7 @@ h1 {
 
 .overlay {
   position: fixed;
-  background: #38042c;
+  background: #051932;
   top: 0;
   left: 0;
   width: 100%;
@@ -139,12 +143,13 @@ h1 {
   overflow: hidden;
 }
 .overlay.open {
-  opacity: 0.9;
+  opacity: 1;
   visibility: visible;
   height: 100%;
   z-index: 15;
 }
 .overlay.open li {
+	font-family: 'poppins-bold', sans-serif;
   animation: fadeInRight .5s ease forwards;
   animation-delay: .35s;
 }
@@ -217,14 +222,14 @@ h1 {
 }
 /*for cover page*/
 #back{
-position: absolute;
+position: fixed;
 top: 0;
 left: 0;
 right: 0;
 bottom: 0;
 height: auto;
 width: 100%;
-z-index: 0;
+z-index: -1;
 }
 #logoHover{
   position: absolute;
@@ -251,13 +256,13 @@ z-index: 0;
   z-index: 6;
 }
 #mountain{
-position: absolute;
+position: fixed;
 left: 0;
 right: 0;
 width: 100%;
 height: auto;
-margin-top: 35%;
-z-index: 1;
+margin-top: 36.5%;
+z-index: 0;
 }
 #treeline{
 position: absolute;
@@ -274,9 +279,10 @@ margin: 0 auto;
 margin-top:39%; 
 z-index: 3;}
 #branding{
-position: absolute;
+position: fixed;
 top: 0;
-margin-left: 28%;
+margin-left: 27.5%;
+margin-right: 27.5%;
 margin-top: 10%;
 width: 45%;
 height: auto;
@@ -298,16 +304,16 @@ right: 0;
 bottom: 0;
 height: auto;
 width: 100%;
-z-index: -1; 
+z-index: -5; 
 }
 #hvrbranding{
 position: absolute;
 top: 0;
-margin-left: 28%;
+margin-left: 27.5%;
 margin-top: 10%;
 width: 45%;
 height: auto;
-z-index: -1;
+z-index: -5;
 }
 #hvrbird{
   position: absolute;
@@ -316,14 +322,14 @@ z-index: -1;
   margin-top: 7%;
   width: 20%;
   height: auto;
-  z-index: -1; 
+  z-index: -5; 
 }
 #white_treeline{
   top: 0;
   left: 0;
   right: 0;
-  z-index:5;
-  margin-top: 55%; 
+  z-index:3;
+  margin-top: 2%; 
   position: absolute;
   width: 100%;
 }
@@ -331,35 +337,32 @@ z-index: -1;
   top: 0;
   left: 0;
   right: 0;
-  z-index:6;
-  margin-top:65%; 
+  z-index:3;
+  margin-top:20%; 
   position: absolute;
   width: 100%;
-  height: 10%;
 }
 #bird2{
   top: 0;
   left: 0;
   right: 0;
-  z-index:5;
-  margin-top: 75%; 
+  z-index:3;
+  margin-top: 27%; 
+  margin-left:-5%;
   position: absolute;
   width: 100%;
-  padding: 0;
-  padding-right: 40px;
-  padding-top: 20px;
 }
 #logo{
   position: absolute;
-  z-index: 6;
-  margin-top: 75%;  
-  margin-left: 42%;
+  z-index: 3;
+  margin-top: 29%;  
+  margin-left: 43.5%;
   width: 13%;
 }
 #textpg1{
   position: absolute;
   z-index: 6;
-  margin-top: 74%;    
+  margin-top: 29%;    
   float: right;  
   right: 0;
   padding-left: 5%;
@@ -412,7 +415,6 @@ z-index: -1;
 }
 #cd-vertical-nav .cd-dot {
   position: relative;
-  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
   top: 8px;
   height: 12px;
   width: 12px;
@@ -512,12 +514,12 @@ z-index: -1;
   text-align:left;
   opacity: 1;} 
 .list_item{
+	margin-top:-8%;
   background-color: #051932;
   height: auto;
-  margin-top: -7%;
   width: auto;
   cursor: pointer;
-  margin-left: 800px;
+  margin-left: 60%;
 }
 
 .container{
@@ -559,7 +561,7 @@ h1{
 #item_two{
   margin: 20px;
   color: #3ac6f4;
-  font-size: 30px;
+  font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
 
@@ -567,35 +569,35 @@ h1{
 #item_three{
   margin: 20px;
   color: #3ac6f4;
-  font-size: 30px;
+  font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
 }
 #item_four{
   margin: 20px;
   color: #3ac6f4;
-  font-size: 30px;
+  font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
 }
 #item_five{
   margin: 20px;
   color: #3ac6f4;
-  font-size: 30px;
+  font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
 }
 #item_six{
   margin: 20px;
   color: #3ac6f4;
-  font-size: 30px;
+  font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
 }
 #item_one{
   margin: 20px;
   color: #3ac6f4;
-  font-size: 30px;
+  font-size: 35px;
   font-family: poppins-bold;
   opacity:.6;
 }
@@ -610,48 +612,45 @@ h1{
 }
 
 #ev1{
-  /*position: absolute;*/
-  height: 30px;
-    width: 30px;
-    float
-:left;
+	margin-right:15px;
+  	height: auto;
+    width: 35px;
+    float:left;
 }
 #ev2{
-  /*position: absolute;*/
-    height: 30px;
-  width: 30px;
-  float:left;
+  	margin-right:15px;
+    height: auto;
+  	width: 35px;
+  	float:left;
 }
 #ev3{
- /*
- */
-    height: 30px;
-  width: 30px;
-  float:left;
+	margin-right:15px;
+    height: auto;
+  	width: 35px;
+  	float:left;
 }
 #ev4{
- /* position: absolute;*/
-    height: 30px;
-  width: 30px;
-  float:left;
+	margin-right:15px;
+    height: auto;
+  	width: 35px;
+  	float:left;
 }
 #ev5{
- /* position: absolute;*/
- 
-  height: 30px;
-  width: 30px;
-  float:left;
+	margin-right:15px;
+  	height: auto;
+  	width: 35px;
+  	float:left;
 }
 #ev6{
-  /*position: absolute;*/
-    height: 30px;
-  width: 30px;
-  float: left;
+	margin-right:15px;
+    height: auto;
+  	width: 35px;
+  	float: left;
 }
 #eventshead{
  /* position: absolute;*/
   font-size: 80px;
-  margin-left: 8%;
+  margin-left: 9.5%;
   margin-top: 5%;
   z-index: 5;
   font-family:poppins-bold;
@@ -671,6 +670,7 @@ h1{
 }
 #it2_desc{
   opacity: .6;
+  margin:0 !important;
 }
 #it3_desc{
   opacity: .6;
@@ -745,15 +745,6 @@ h1{
 .row a{
    text-decoration: none;
 }
-/*#text_works {
-  text-decoration: none;
-}
-#text_speed {
-  text-decoration: none;
-}
-#text_mi {
-text-decoration: none;
-}*/
 #reg_works img:hover ~ #text_works{
   opacity: 2;
 }
@@ -764,18 +755,15 @@ text-decoration: none;
   opacity: 2;
 }
 
-/*.reg img:hover #text_wk{
-  opacity: 2;
-}*/
 .wtpattern{
-  margin-top: -15%;
+  	margin-top: -8%;
     position: relative;
-    opacity: 1;
     height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #051932;
 }
 .btn:hover {
   background: #051932;
@@ -794,7 +782,6 @@ text-decoration: none;
   z-index: 110;
   transition: opacity .25s ease;
   visibility: hidden;
-  /*opacity: .4;*/
 }
 .contacts_container:hover {
   opacity: 1;
@@ -842,7 +829,6 @@ text-decoration: none;
   opacity: 0;
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
-  /*overflow: hidden;*/
   overflow-y: scroll;
      top: 0; left: 0; right: 0; bottom: 0;
 }
@@ -875,47 +861,7 @@ text-decoration: none;
   font-weight: 400;
   text-align: center;
 }
-/*.overlay_2 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: inline-block;
-  position: relative;
-  height: 100%;
-}
-.overlay_2 ul li {
-  display: block;
-  height: 25%;
-  height: calc(100% / 4);
-  min-height: 50px;
-  position: relative;
-  opacity: 0;
-}
-.overlay_2 ul li a {
-  display: block;
-  position: relative;
-  color: #FFF;
-  text-decoration: none;
-  overflow: hidden;
-}
-.overlay_2 ul li a:hover:after, .overlay_2 ul li a:focus:after, .overlay_2 ul li a:active:after {
-  width: 100%;
-}
-.overlay_2 ul li a:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0%;
-  transform: translateX(-50%);
-  height: 3px;
-  background: #FFF;
-  transition: .35s;
-}*/
 
-/*#reg_works img:hover .show_name{
-  opacity: 1;
-}*/
 .white_bg{
   background-color: white;
   height: 200%;
