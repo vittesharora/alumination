@@ -326,6 +326,10 @@ z-index: -5;
   height: auto;
   z-index: -5; 
 }
+#alum_fix{
+  position: absolute;
+  margin-top: -200px;
+}
 #white_treeline{
   top: 0;
   left: 0;
@@ -368,7 +372,17 @@ z-index: -5;
   float: right;  
   right: 0;
   padding-left: 5%;
-  
+  margin-right: 55px;
+  font-family: poppins-bold;
+}
+#usp {
+  color: #3AC6F4;
+}
+#textpg1 h1{
+  color: #051932;
+}
+#textpg1 p{
+  color: #051932;
 }
 @keyframes fade{
   from{
@@ -567,6 +581,7 @@ h1{
   font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
+  transition: 0.2s ease-out;
 
 }
 #item_three{
@@ -575,6 +590,7 @@ h1{
   font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
+  transition: 0.2s ease-out;
 }
 #item_four{
   margin: 20px;
@@ -582,6 +598,7 @@ h1{
   font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
+  transition: 0.2s ease-out;
 }
 #item_five{
   margin: 20px;
@@ -589,6 +606,7 @@ h1{
   font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
+  transition: 0.2s ease-out;
 }
 #item_six{
   margin: 20px;
@@ -596,6 +614,7 @@ h1{
   font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
+  transition: 0.2s ease-out;
 }
 #item_one{
   margin: 20px;
@@ -603,6 +622,7 @@ h1{
   font-size: 35px;
   font-family: poppins-bold;
   opacity:.6;
+  transition: 0.2s ease-out;
 }
 #desc2{
   opacity: 0;
