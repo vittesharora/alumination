@@ -7,8 +7,13 @@ $('.new_tog').click(function(){
   $('#overlay').toggleClass('open');
 });
 
-
-// for not displaying interactive scroller on front page
+$('#contacts_toggle ').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay_2').toggleClass('open');
+  });
+$('.btn').click(function(){
+  $('#contacts_toggle').toggleClass('active');
+});
 document.getElementById("cd-vertical-nav").style.right = "-200px";
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -21,8 +26,6 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
-
-
 jQuery(document).ready(function($){
 	var contentSections = $('.cd-section'),
 		navigationItems = $('#cd-vertical-nav a');
@@ -31,28 +34,10 @@ jQuery(document).ready(function($){
 	$(window).on('scroll', function(){
 		updateNavigation();
 	});
-
-	//smooth scroll to the section
 	navigationItems.on('click', function(event){
         event.preventDefault();
         smoothScroll($(this.hash));
     });
-    //smooth scroll to second section
-    // $('.cd-scroll-down').on('click', function(event){
-    //     event.preventDefault();
-    //     smoothScroll($(this.hash));
-    // });
-
-    // //open-close navigation on touch devices
-    // $('.touch .cd-nav-trigger').on('click', function(){
-    // 	$('.touch #cd-vertical-nav').toggleClass('open');
-  
-    // });
-    // //close navigation on touch devices when selectin an elemnt from the list
-    // $('.touch #cd-vertical-nav a').on('click', function(){
-    // 	$('.touch #cd-vertical-nav').removeClass('open');
-    // });
-
 	function updateNavigation() {
 		contentSections.each(function(){
 			$this = $(this);
@@ -64,7 +49,6 @@ jQuery(document).ready(function($){
 			}
 		});
 	}
-
 	function smoothScroll(target) {
         $('body,html').animate(
         	{'scrollTop':target.offset().top},
@@ -74,8 +58,7 @@ jQuery(document).ready(function($){
 });
 
 (function() {
-  // Tutorial: https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27
-  window.addEventListener('scroll', function(event) {
+    window.addEventListener('scroll', function(event) {
     var depth, i, layer, layers, len, movement, topDistance, translate3d;
     topDistance = this.pageYOffset;
     layers = document.querySelectorAll("[data-type='parallax']");
@@ -93,7 +76,6 @@ jQuery(document).ready(function($){
   });
 
 }).call(this);
-//for events page
 $(document).ready(function(){
     $("#item_one").click(function(){
         $("#item2").css({
@@ -294,8 +276,4 @@ $(document).ready(function(){
         $('#item5').fadeOut(100);
         $('#item3').fadeOut(100);  
     }); 
-     });
-//transition
-//for loop
-//translation of text
-//1.5
+});

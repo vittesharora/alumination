@@ -8,51 +8,50 @@
 body {
   background: #F5F5F5;
   margin: 0px !important;
-}
-body{
   padding-left: 0px !important;
   padding-right: 0px !important;
   background-color: #051932;
 }
 
+::-webkit-scrollbar{
+    display:none;
+}
 .home{
   text-align: center;
   font-family: 'Varela Round', sans-serif;
-  height: 100%;
   width: 100%;
-  padding: 20px;
+  height: 768px;
   z-index: -10;
- 
 }
 .alum{
   text-align: center;
   font-family: 'Varela Round', sans-serif;
- /* position: relative;*/
-  height: 100%;
+  height: 768px;
   width: 100%;
-  padding: 20px;
-  background-color: black;
+  position: relative;
+  background-color: #051932;
   color: white;
 }
 .events{
-  margin-top: 82%;
+  margin-top: -15%;
   position: relative;
   text-align: center;
   font-family: 'poppins-bold', sans-serif;
-  height: 100%;
   width: 100%;
-  padding: 20px;
+  padding-bottom: 12%;
+  padding-right: 10%;
+  padding-left:10%;
+  background-color: #051932;
 }
 .day{
-  margin-top: 25%;
+  padding-top: 5%;
   position: relative;
   text-align: center;
   font-family: 'Varela Round', sans-serif;
-  height: 100%;
   width: 100%;
-  padding: 20px;
-  
+  background-color: #051932;
   color: white;
+  z-index:1;
 }
 .day h1{
   font-size: 60px;
@@ -62,58 +61,27 @@ body{
   position: relative;
   text-align: center;
   font-family: 'Varela Round', sans-serif; 
-  height: 100%;
   width: 100%;
-  padding: 20px;
+  padding-right:10%;
+  padding-left:10%;
+  background-color: #051932;
+  z-index: 1;
 }
 .footer{
   position: relative;
   margin-top: 0%;
-  /*width:auto;*/
-  background-color: black; 
-  color: white;
-  text-align: center; 
+  background-color: #fff; 
+  color:#051932;
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
   font-family: 'Varela Round', sans-serif;
 }
-/*
-.container {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  top: 40%;
-  left: 0;
-  margin: 0 auto;
-  font-family: 'Varela Round', sans-serif;
+
+.footer .row{
+	margin:0;
 }
-.container p {
-  font-size: 20px;
-}
-.container a {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #38042c;
-  text-decoration: none;
-  font-size: 20px;
-  overflow: hidden;
-  top: 5px;
-}
-.container a:after {
-  content: '';
-  position: absolute;
-  background: #38042c;
-  height: 2px;
-  width: 0%;
-  transform: translateX(-50%);
-  left: 50%;
-  bottom: 0;
-  transition: .35s ease;
-}
-.container a:hover:after, .container a:focus:after, .container a:active:after {
-  width: 100%;
-}
-*/
+
 h1 {
   position: relative;
   text-align: center;
@@ -129,7 +97,6 @@ h1 {
   cursor: pointer;
   z-index: 100;
   transition: opacity .25s ease;
-  /*opacity: .4;*/
 }
 .button_container:hover {
   opacity: 1;
@@ -167,7 +134,7 @@ h1 {
 
 .overlay {
   position: fixed;
-  background: #38042c;
+  background: #051932;
   top: 0;
   left: 0;
   width: 100%;
@@ -178,12 +145,13 @@ h1 {
   overflow: hidden;
 }
 .overlay.open {
-  opacity: 0.9;
+  opacity: 1;
   visibility: visible;
   height: 100%;
   z-index: 15;
 }
 .overlay.open li {
+	font-family: 'poppins-bold', sans-serif;
   animation: fadeInRight .5s ease forwards;
   animation-delay: .35s;
 }
@@ -256,14 +224,14 @@ h1 {
 }
 /*for cover page*/
 #back{
-position: absolute;
+position: fixed;
 top: 0;
 left: 0;
 right: 0;
 bottom: 0;
 height: auto;
 width: 100%;
-z-index: 0;
+z-index: -1;
 }
 #logoHover{
   position: absolute;
@@ -290,13 +258,13 @@ z-index: 0;
   z-index: 6;
 }
 #mountain{
-position: absolute;
+position: fixed;
 left: 0;
 right: 0;
 width: 100%;
 height: auto;
-margin-top: 35%;
-z-index: 1;
+margin-top: 36.5%;
+z-index: 0;
 }
 #treeline{
 position: absolute;
@@ -313,13 +281,14 @@ margin: 0 auto;
 margin-top:39%; 
 z-index: 3;}
 #branding{
-position: absolute;
+position: fixed;
 top: 0;
-margin-left: 28%;
+margin-left: 27.5%;
+margin-right: 27.5%;
 margin-top: 10%;
 width: 45%;
 height: auto;
-z-index: 5;}
+z-index: 3;}
 #hvrlogo{
  position: absolute;
   width: 5%;
@@ -337,16 +306,16 @@ right: 0;
 bottom: 0;
 height: auto;
 width: 100%;
-z-index: -1; 
+z-index: -5; 
 }
 #hvrbranding{
 position: absolute;
 top: 0;
-margin-left: 28%;
+margin-left: 27.5%;
 margin-top: 10%;
 width: 45%;
 height: auto;
-z-index: -1;
+z-index: -5;
 }
 #hvrbird{
   position: absolute;
@@ -355,14 +324,18 @@ z-index: -1;
   margin-top: 7%;
   width: 20%;
   height: auto;
-  z-index: -1; 
+  z-index: -5; 
+}
+#alum_fix{
+  position: absolute;
+  margin-top: -200px;
 }
 #white_treeline{
   top: 0;
   left: 0;
   right: 0;
-  z-index:5;
-  margin-top: 55%; 
+  z-index:3;
+  margin-top: 2%; 
   position: absolute;
   width: 100%;
 }
@@ -370,39 +343,46 @@ z-index: -1;
   top: 0;
   left: 0;
   right: 0;
-  z-index:6;
-  margin-top:65%; 
+  z-index:3;
+  margin-top:18%; 
   position: absolute;
   width: 100%;
-  height: 10%;
 }
 #bird2{
   top: 0;
   left: 0;
   right: 0;
-  z-index:5;
-  margin-top: 75%; 
+  z-index:3;
+  margin-top: 27%; 
+  margin-left:-5%;
   position: absolute;
   width: 100%;
-  padding: 0;
-  padding-right: 40px;
-  padding-top: 20px;
 }
 #logo{
   position: absolute;
-  z-index: 6;
-  margin-top: 75%;  
-  margin-left: 42%;
+  z-index: 3;
+  margin-top: 29%;  
+  margin-left: 43.5%;
   width: 13%;
 }
 #textpg1{
   position: absolute;
   z-index: 6;
-  margin-top: 74%;    
+  margin-top: 29%;    
   float: right;  
   right: 0;
   padding-left: 5%;
-  
+  margin-right: 55px;
+  font-family: poppins-bold;
+}
+#usp {
+  color: #3AC6F4;
+}
+#textpg1 h1{
+  color: #051932;
+}
+#textpg1 p{
+  color: #051932;
 }
 @keyframes fade{
   from{
@@ -451,7 +431,6 @@ z-index: -1;
 }
 #cd-vertical-nav .cd-dot {
   position: relative;
-  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
   top: 8px;
   height: 12px;
   width: 12px;
@@ -465,26 +444,18 @@ z-index: -1;
   -ms-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-}/*.cd-dot{
-  position: relative;
-  margin-left: 100px;
-  margin-top: 100px;
-  height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    padding: 10px;
-}*/
- #cd-vertical-nav a.is-selected .cd-dot {
+}
+#cd-vertical-nav a.is-selected .cd-dot {
   background-color: white;
 }
 #cd-vertical-nav .cd-label {
   position: relative;
- /* margin-right: 10px;*/
   top: 5px;
   padding: .4em .5em;
   color: #3AC6F4;
   font-size: 14px;
   font-size: 0.875rem;
+  font-family: poppins-bold;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
@@ -504,14 +475,6 @@ z-index: -1;
 #cd-vertical-nav{
   transition:all 0.2s ease 0.2s;
 }
-/*EVENTS PAGE STYLING*/
-
-/*.items{
-  background-color: yellow;
-  
-  /*float: left;
-}*/
-
 
 #item2{
   background-color:#051932;
@@ -568,13 +531,12 @@ z-index: -1;
   text-align:left;
   opacity: 1;} 
 .list_item{
- /* position: absolute;*/
+	margin-top:-8%;
   background-color: #051932;
   height: auto;
-  margin-top: -7%;
   width: auto;
   cursor: pointer;
-  margin-left: 800px;
+  margin-left: 60%;
 }
 
 .container{
@@ -616,45 +578,51 @@ h1{
 #item_two{
   margin: 20px;
   color: #3ac6f4;
-  font-size: 30px;
+  font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
+  transition: 0.2s ease-out;
 
 }
 #item_three{
   margin: 20px;
   color: #3ac6f4;
-  font-size: 30px;
+  font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
+  transition: 0.2s ease-out;
 }
 #item_four{
   margin: 20px;
   color: #3ac6f4;
-  font-size: 30px;
+  font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
+  transition: 0.2s ease-out;
 }
 #item_five{
   margin: 20px;
   color: #3ac6f4;
-  font-size: 30px;
+  font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
+  transition: 0.2s ease-out;
 }
 #item_six{
   margin: 20px;
   color: #3ac6f4;
-  font-size: 30px;
+  font-size: 35px;
   font-family: Poppins-bold;
   opacity:0.6;
+  transition: 0.2s ease-out;
 }
 #item_one{
   margin: 20px;
   color: #3ac6f4;
-  font-size: 30px;
+  font-size: 35px;
   font-family: poppins-bold;
   opacity:.6;
+  transition: 0.2s ease-out;
 }
 #desc2{
   opacity: 0;
@@ -667,48 +635,45 @@ h1{
 }
 
 #ev1{
-  /*position: absolute;*/
-  height: 30px;
-    width: 30px;
-    float
-:left;
+	margin-right:15px;
+  	height: auto;
+    width: 35px;
+    float:left;
 }
 #ev2{
-  /*position: absolute;*/
-    height: 30px;
-  width: 30px;
-  float:left;
+  	margin-right:15px;
+    height: auto;
+  	width: 35px;
+  	float:left;
 }
 #ev3{
- /*
- */
-    height: 30px;
-  width: 30px;
-  float:left;
+	margin-right:15px;
+    height: auto;
+  	width: 35px;
+  	float:left;
 }
 #ev4{
- /* position: absolute;*/
-    height: 30px;
-  width: 30px;
-  float:left;
+	margin-right:15px;
+    height: auto;
+  	width: 35px;
+  	float:left;
 }
 #ev5{
- /* position: absolute;*/
- 
-  height: 30px;
-  width: 30px;
-  float:left;
+	margin-right:15px;
+  	height: auto;
+  	width: 35px;
+  	float:left;
 }
 #ev6{
-  /*position: absolute;*/
-    height: 30px;
-  width: 30px;
-  float: left;
+	margin-right:15px;
+    height: auto;
+  	width: 35px;
+  	float: left;
 }
 #eventshead{
  /* position: absolute;*/
   font-size: 80px;
-  margin-left: 8%;
+  margin-left: 9.5%;
   margin-top: 5%;
   z-index: 5;
   font-family:poppins-bold;
@@ -728,6 +693,7 @@ h1{
 }
 #it2_desc{
   opacity: .6;
+  margin:0 !important;
 }
 #it3_desc{
   opacity: .6;
@@ -764,6 +730,8 @@ h1{
   height: 50%;
   width: 50%;
   opacity: 0.5;
+  z-index: 5;
+  transition: 0.5s ease-out;
 } 
 .show_name{
  /* visibility: hidden;*/
@@ -784,6 +752,7 @@ h1{
  color: white;
  text-decoration: none;
  font-family: poppins-bold;
+ transition: 0.5s ease-out;
 }
 #text_speed{
  padding: 20px;
@@ -791,6 +760,7 @@ h1{
  color: white;
  text-decoration: none;
  font-family: poppins-bold;
+ transition: 0.5s ease-out;	
 }
 #text_mi{
  padding: 20px;
@@ -798,19 +768,11 @@ h1{
  color: white;
  text-decoration: none;
  font-family: poppins-bold;
+ transition: 0.5s ease-out;
 }
 .row a{
    text-decoration: none;
 }
-/*#text_works {
-  text-decoration: none;
-}
-#text_speed {
-  text-decoration: none;
-}
-#text_mi {
-text-decoration: none;
-}*/
 #reg_works img:hover ~ #text_works{
   opacity: 2;
 }
@@ -821,25 +783,14 @@ text-decoration: none;
   opacity: 2;
 }
 
-/*.reg img:hover #text_wk{
-  opacity: 2;
-}*/
 .wtpattern{
-  margin-top: -15%;
+  	margin-top: -8%;
     position: relative;
-    opacity: 1;
     height: 100%;
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.btn:hover {
-  background: #051932;
-}
-.btn {
-  background: black;
-  color: white;
+    background-color: #051932;
 }
 .contacts_container {
   position: fixed;
@@ -851,7 +802,6 @@ text-decoration: none;
   z-index: 110;
   transition: opacity .25s ease;
   visibility: hidden;
-  /*opacity: .4;*/
 }
 .contacts_container:hover {
   opacity: 1;
@@ -891,20 +841,21 @@ text-decoration: none;
 }
 .overlay_2 {
   position: fixed;
-  background: #38042c;
+  background: #051932;
   top: 0;
   left: 0;
   width: 100%;
   height: 0%;
   opacity: 0;
+  padding-right: 10%;
+  padding-left: 10%;
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
-  /*overflow: hidden;*/
   overflow-y: scroll;
-     top: 0; left: 0; right: 0; bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
 }
 .overlay_2.open {
-  opacity: 0.9;
+  opacity: 1;
   visibility: visible;
   height: 100%;
   z-index: 105;
@@ -925,71 +876,27 @@ text-decoration: none;
 .overlay_2 nav {
   position: relative;
   height: 70%;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   font-size: 50px;
   font-family: 'Varela Round', serif;
   font-weight: 400;
   text-align: center;
 }
-/*.overlay_2 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: inline-block;
-  position: relative;
-  height: 100%;
-}
-.overlay_2 ul li {
-  display: block;
-  height: 25%;
-  height: calc(100% / 4);
-  min-height: 50px;
-  position: relative;
-  opacity: 0;
-}
-.overlay_2 ul li a {
-  display: block;
-  position: relative;
-  color: #FFF;
-  text-decoration: none;
-  overflow: hidden;
-}
-.overlay_2 ul li a:hover:after, .overlay_2 ul li a:focus:after, .overlay_2 ul li a:active:after {
-  width: 100%;
-}
-.overlay_2 ul li a:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0%;
-  transform: translateX(-50%);
-  height: 3px;
-  background: #FFF;
-  transition: .35s;
-}*/
 
-/*#reg_works img:hover .show_name{
-  opacity: 1;
-}*/
 .white_bg{
   background-color: white;
-  height: 200%;
-  width: auto;
-  padding: 10%;
-  margin: 5%;
+  width: 241px;
+  padding: 4%;
 }
 .img_here{
   background-color: black;
-  padding: 10%;
+
 }
 .contacts_head{
   color: white;
   font-family: 'poppins-bold', sans-serif;
-  font-size: 35px;
-  padding: 20px;
-  background-color: black;
+  font-size:70px;
 }
 /*schedule styling*/
 .caro{
@@ -1027,4 +934,135 @@ text-decoration: none;
   margin-top: 38%;
   margin-left: -38%;
   height: 20%;
+}
+
+.contact_board{
+  width: 50%;
+  margin: 10%;
+}
+
+.contact_board img{
+  left:0;
+}
+
+.overlay-menu_2 .row:nth-of-type(3) .contact_board{
+  width: 75%;
+  margin: 10%;
+}
+
+.img_here img{
+  width: 100%;
+}
+.overlay-menu_2 .row{
+  margin-bottom: 5%;
+}
+.overlay-menu_2 .row:nth-of-type(1){
+  margin-bottom: 0;
+}
+.content_contact{
+  font-family: "poppins-bold", sans-serif;
+  font-size: 18px;
+}
+
+.content_contact h4{
+  margin:0;
+}
+
+.content_contact p{
+  margin:0;
+  font-size: 15px;
+}
+
+.col-sm-4{
+  font-family: "poppins-bold", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobilehome{
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  height: auto;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  }
+.mobpg2{
+   top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  margin-top:169%;
+  z-index: 200;
+  display:none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .mob{
+      display: none;
+    }
+    .mobilehome{
+      display: block;
+     }
+     .mobpg2{
+      display: block;
+     }
+}
+
+
+
+
+
+
+
 }
