@@ -3,18 +3,406 @@
     font-family:poppins-bold;
     src: url(../fonts/POPPINS-BOLD.ttf);
 }
-
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 body {
-  background: #F5F5F5;
   margin: 0px !important;
   padding-left: 0px !important;
   padding-right: 0px !important;
   background-color: #051932;
 }
-
 ::-webkit-scrollbar{
     display:none;
+}
+.mobilehome{
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  height: auto;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  }
+.mobpg2{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  margin-top:169%;
+  z-index: 200;
+  display:none;
+}
+@media only screen and (max-width: 1385px) {
+  .alum{
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  height: 768px;
+  width: 100%;
+  position: relative;
+  background-color: #051932;
+  margin-top: -10%;
+  color: white;
+  }
+  .events{
+  margin-top: -20% !important;
+  position: relative;
+  text-align: center;
+  font-family: 'poppins-bold', sans-serif;
+  width: 100%;
+  padding-bottom: 12%;
+  padding-right: 10%;
+  padding-left:10%;
+  background-color: #051932;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .events{
+  margin-top: -30% !important;
+  position: relative;
+  text-align: center;
+  font-family: 'poppins-bold', sans-serif;
+  width: 100%;
+  padding-bottom: 12%;
+  padding-right: 10%;
+  padding-left:10%;
+  background-color: #051932;
+  }
+  .alum{
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  height: 768px;
+  width: 100%;
+  position: relative;
+  background-color: #051932;
+  margin-top: -15.1%;
+  color: white;
+  }
+  #textpg1{
+  position: absolute;
+  z-index: 6;
+  margin-top: 24% !important;    
+  float: right;  
+  right: 0;
+  padding-left: 5%;
+  margin-right: 55px;
+  font-family: poppins-bold;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  .alum{
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  height: 768px;
+  width: 100%;
+  position: relative;
+  background-color: #051932;
+  margin-top: -25%;
+  color: white;
+  }
+  #textpg1{
+  position: absolute;
+  z-index: 6;
+  margin-top: 20% !important;    
+  float: right;  
+  right: 0;
+  padding-left: 5%;
+  margin-right: 55px;
+  font-family: poppins-bold;
+  font-size: 15px;
+  }
+  .list_item strong{
+  margin-top:-8%;
+  background-color: #051932;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 20px !important;
+  }
+  .list_item img{
+  margin-top:-8%;
+  background-color: #051932;
+  height: 25px;
+  width: auto;
+  cursor: pointer;
+  margin-left: 60%;
+  }
+  .list_item ul{
+  margin-left: 27%;
+  margin-right: -10%;
+  }
+  .items{
+  margin-left:-12%;
+  }
+  
+}
+@media only screen and (max-width: 950px) {
+  .alum{
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  height: 768px;
+  width: 100%;
+  position: relative;
+  background-color: #051932;
+  margin-top: -35%;
+  color: white;
+  }
+  #textpg1{
+  position: absolute;
+  z-index: 6;
+  margin-top: 20% !important;    
+  float: right;  
+  right: 0;
+  padding-left: 5%;
+  margin-right: 55px;
+  font-family: poppins-bold;
+  font-size: 13px;
+  }
+  .items{
+  margin-left:-15%;
+  }
+  #it2_desc{
+  font-size: 15px;
+  text-align: left;
+  }
+  #it3_desc{
+  font-size: 15px;
+  text-align: left;
+  }
+  #it4_desc{
+  font-size: 15px;
+  text-align: left;
+  }
+  #it5_desc{
+  font-size: 15px;
+  text-align: left;
+  }
+  #it6_desc{
+  font-size: 15px;
+  text-align: left;
+  }
+  #it1_desc{
+  font-size: 15px;
+  text-align: left;
+  }
+  #desc_2{
+  font-size: 15px;
+  text-align: left;
+  }
+  #item2{
+  background-color:#051932;
+  height: 600px;
+  position: absolute;
+  text-align: center;
+  width: 500px !important;
+  margin-left:8%;
+  text-align:left;
+  }
+  #item3{
+  background-color:#051932;
+  height: 600px;  
+  position: absolute;
+  width: 500px !important;
+  text-align: center;
+  margin-left:8%;
+  text-align:left;
+  }
+  #item4{
+  background-color:#051932;
+  height: 600px;  
+  position: absolute;
+  width: 500px !important;
+  text-align: center;
+  margin-left:8%;
+  text-align:left;
+  }
+  #item5{
+  background-color:#051932;
+  height: 600px;  
+  position: absolute;
+  width: 500px !important;
+  text-align: center;
+  margin-left:8%;
+  text-align:left;
+  } 
+  #item6{
+  background-color:#051932;
+  height: 600px;  
+  position: absolute;
+  width: 500px !important;
+  text-align: center;
+  margin-left:8%;
+  text-align:left;
+  }
+  #item1{
+  background-color:#051932;
+  height: 600px;  
+  position: absolute;
+  width: 500px !important;
+  text-align: center;
+  margin-left:8%;
+  text-align:left;
+  opacity: 1;
+  } 
+}
+@media only screen and (max-width: 840px) {
+  .alum{
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  height: 768px;
+  width: 100%;
+  position: relative;
+  background-color: #051932;
+  margin-top: -45%;
+  color: white;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .reg img{
+  padding-top: 0px !important;
+  height: 30% !important;
+  width: 30% !important;
+  opacity: 0.5;
+  z-index: 5;
+  transition: 0.5s ease-out;
+  } 
+  .mobilehome{
+  display: block;
+  }
+  .mobpg2{
+  position: absolute;
+  width: 10%;
+  z-index: 100;
+  display:none;
+}
+}  
+@media only screen and (max-width: 760px) {
+  .alum{
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  height: 768px;
+  width: 100%;
+  position: relative;
+  background-color: #051932;
+  margin-top: -55%;
+  color: white;
+  }
+  #textpg1{
+  position: absolute;
+  z-index: 6;
+  margin-top: 20% !important;    
+  float: right;  
+  right: 0;
+  padding-left: 5%;
+  margin-right: 55px;
+  font-family: poppins-bold;
+  font-size: 10px;
+  }
+  #it2_desc{
+  font-size: 15px;
+  text-align: left;
+  }
+  #it3_desc{
+  font-size: 15px;
+  text-align: left;
+  }
+  #it4_desc{
+  font-size: 15px;
+  text-align: left;
+  }
+  #it5_desc{
+  font-size: 15px;
+  text-align: left;
+  }
+  #it6_desc{
+  font-size: 15px;
+  text-align: left;
+  }
+  #it1_desc{
+  font-size: 15px;
+  text-align: left;
+  }
+  #desc_2{
+  font-size: 15px;
+  text-align: left;
+  }
+  #item2{
+  background-color:#051932;
+  height: 600px;
+  position: absolute;
+  text-align: center;
+  width: 400px !important;
+  margin-left:8%;
+  text-align:left;
+  }
+  #item3{
+  background-color:#051932;
+  height: 600px;  
+  position: absolute;
+  width: 400px !important;
+  text-align: center;
+  margin-left:8%;
+  text-align:left;
+  }
+  #item4{
+  background-color:#051932;
+  height: 600px;  
+  position: absolute;
+  width: 400px !important;
+  text-align: center;
+  margin-left:8%;
+  text-align:left;
+  }
+  #item5{
+  background-color:#051932;
+  height: 600px;  
+  position: absolute;
+  width: 400px !important;
+  text-align: center;
+  margin-left:8%;
+  text-align:left;
+  } 
+  #item6{
+  background-color:#051932;
+  height: 600px;  
+  position: absolute;
+  width: 400px !important;
+  text-align: center;
+  margin-left:8%;
+  text-align:left;
+  }
+  #item1{
+  background-color:#051932;
+  height: 600px;  
+  position: absolute;
+  width: 400px !important;
+  text-align: center;
+  margin-left:8%;
+  text-align:left;
+  opacity: 1;
+  } 
+  .list_item strong{
+  margin-top:-8%;
+  background-color: #051932;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  margin-left: -14%;
+  font-size: 20px !important;
+  text-align: left;
+  }
+  .list_item img{
+  margin-top:-8%;
+  background-color: #051932;
+  height: 17px;
+  width: auto;
+  cursor: pointer;
+  margin-left: 30%;
+  }
 }
 .home{
   text-align: center;
@@ -53,11 +441,8 @@ body {
   color: white;
   z-index:1;
 }
-.day h1{
-  font-size: 60px;
-}
 .reg{
-  margin-top: -15%;
+  margin-top: -10%;
   position: relative;
   text-align: center;
   font-family: 'Varela Round', sans-serif; 
@@ -69,25 +454,24 @@ body {
 }
 .footer{
   position: relative;
-  margin-top: 0%;
-  background-color: #fff; 
-  color:#051932;
+  margin-top: 0%; 
+  color:#fff;
   text-align: center;
-  padding-right: 10%;
-  padding-left: 10%;
   font-family: 'Varela Round', sans-serif;
+  z-index: 5;
 }
-
+.day h1{
+  font-size: 60px;
+}
 .footer .row{
-	margin:0;
+	margin-right:0;
+  margin-left:0;
 }
-
 h1 {
   position: relative;
   text-align: center;
   font-family: 'Varela Round', serif;
 }
-
 .button_container {
   position: fixed;
   top: 5%;
@@ -131,7 +515,6 @@ h1 {
 .button_container span:nth-of-type(3) {
   top: 22px;
 }
-
 .overlay {
   position: fixed;
   background: #051932;
@@ -184,9 +567,8 @@ h1 {
 }
 .overlay ul li {
   display: block;
-  height: 25%;
-  height: calc(100% / 4);
-  min-height: 50px;
+  height: auto;
+  padding: 15px;
   position: relative;
   opacity: 0;
 }
@@ -211,7 +593,6 @@ h1 {
   background: #FFF;
   transition: .35s;
 }
-
 @keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -222,16 +603,15 @@ h1 {
     left: 0;
   }
 }
-/*for cover page*/
 #back{
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-height: auto;
-width: 100%;
-z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  z-index: -1;
 }
 #logoHover{
   position: absolute;
@@ -409,7 +789,6 @@ z-index: -5;
 }
 #cd-vertical-nav a {
   display: inline-block;
-  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
   -webkit-backface-visibility: hidden;
   backface-visibility: visible;
   text-decoration: none;
@@ -419,14 +798,14 @@ z-index: -5;
   display: table;
   clear: both;
 }
- #cd-vertical-nav a:hover span {
+#cd-vertical-nav a:hover span {
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
   transform: scale(1.5);
 }
- #cd-vertical-nav a:hover .cd-label {
+#cd-vertical-nav a:hover .cd-label {
   opacity: 1;
 }
 #cd-vertical-nav .cd-dot {
@@ -475,7 +854,15 @@ z-index: -5;
 #cd-vertical-nav{
   transition:all 0.2s ease 0.2s;
 }
-
+#item1{
+  background-color:#051932;
+  height: 600px;  
+  position: absolute;
+  width: 550px;
+  text-align: center;
+  margin-left:8%;
+  text-align:left;
+  opacity: 1;} 
 #item2{
   background-color:#051932;
   height: 600px;
@@ -484,7 +871,6 @@ z-index: -5;
   width: 550px;
   margin-left:8%;
   text-align:left;}
-
 #item3{
   background-color:#051932;
   height: 600px;  
@@ -521,15 +907,6 @@ z-index: -5;
   margin-left:8%;
   text-align:left;
   }
-#item1{
-  background-color:#051932;
-  height: 600px;  
-  position: absolute;
-  width: 550px;
-  text-align: center;
-  margin-left:8%;
-  text-align:left;
-  opacity: 1;} 
 .list_item{
 	margin-top:-8%;
   background-color: #051932;
@@ -538,7 +915,6 @@ z-index: -5;
   cursor: pointer;
   margin-left: 60%;
 }
-
 .container{
   background-color: #051932;
 }
@@ -546,10 +922,6 @@ z-index: -5;
   color: white;
   font-size: 18px;
   font-family: poppins-bold;
-}
-body{
-  background-color: #051932;
-
 }
 @keyframes move{
   from{
@@ -671,7 +1043,6 @@ h1{
   	float: left;
 }
 #eventshead{
- /* position: absolute;*/
   font-size: 80px;
   margin-left: 9.5%;
   margin-top: 5%;
@@ -962,6 +1333,7 @@ h1{
 .content_contact{
   font-family: "poppins-bold", sans-serif;
   font-size: 18px;
+  z-index: 5;
 }
 
 .content_contact h4{
@@ -976,96 +1348,19 @@ h1{
 .col-sm-4{
   font-family: "poppins-bold", sans-serif;
 }
-<<<<<<< HEAD
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mobilehome{
+.backdrop{
   position: absolute;
   width: 100%;
-  padding: 0;
+  left: 0;
+  bottom: -25%;
+}
+.backdrop img{
+  padding-top: 0;
   height: auto;
-  z-index: 200;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: none;
-  }
-.mobpg2{
-   top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
+  opacity: 1;
   width: 100%;
-  margin-top:169%;
-  z-index: 200;
-  display:none;
 }
-
-
-@media only screen and (max-width: 768px) {
-    .mob{
-      display: none;
-    }
-    .mobilehome{
-      display: block;
-     }
-     .mobpg2{
-      display: block;
-     }
+.row .col-md-4{
+  z-index: 5;
 }
-
-
-
-
-
-
-
-}
-=======
->>>>>>> 0633d23bc5728a0667c2bac6e1269ee26f05105a
