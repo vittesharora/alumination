@@ -14,7 +14,6 @@ body {
     display:none;
 }
 .mobilehome{
-  position: absolute;
   width: 100%;
   padding: 0;
   height: auto;
@@ -30,9 +29,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  position: absolute;
   width: 100%;
-  margin-top:169%;
   z-index: 200;
   display:none;
 }
@@ -271,16 +268,34 @@ body {
   transition: 0.5s ease-out;
   } 
   .mobilehome{
+  position: relative;
   display: block;
   }
   .mobpg2{
-  position: absolute;
-  width: 10%;
+  position: relative;
+  width: 100%;
   z-index: 100;
-  display:none;
-}
+  display:block;
+  }
+  .home{
+    position: relative;
+    height: auto;
+    z-index: 100;
+    height: auto !important;
+  }
+  .alum{
+    height: auto !important;
+    position: relative;
+    margin-top:0 !important;
+  }
+  .desktop{
+    display:none;
+  }
+  .events{
+    margin-top: 0 !important;
+  }
 }  
-@media only screen and (max-width: 760px) {
+/*@media only screen and (max-width: 760px) {
   .alum{
   text-align: center;
   font-family: 'Varela Round', sans-serif;
@@ -403,7 +418,7 @@ body {
   cursor: pointer;
   margin-left: 30%;
   }
-}
+}*/
 .home{
   text-align: center;
   font-family: 'Varela Round', sans-serif;
