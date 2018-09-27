@@ -38,8 +38,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <!-- <div class="desktop"> -->
+                <div class="col-md-4 desktop">
                 <img class="contact_board" src="img/bti_board.svg"> 
+            <!-- </div> -->
+            </div>
+            <div class="btihead">
+                <h1> BTI </h1>
             </div>
             <div class="col-md-4">
                 <div class="white_bg">
@@ -64,8 +69,10 @@
                 </div>
             </div>                                  
         </div>
-
          <div class="row">
+            <div class="eventshead">
+                <h1> EVENTS </h1>
+            </div>
             <div class="col-md-3">
                 <div class="white_bg">
                     <div class="img_here">
@@ -99,13 +106,19 @@
                     </div>
                 </div>
             </div> 
-            <div class="col-md-3">
+            
+                <div class="col-md-3 desktop">
                 <img class="contact_board" src="img/events.svg">
+            
             </div>                                  
         </div>
          <div class="row">
-            <div class="col-md-4">
+            
+                <div class="col-md-4 desktop">
                 <img class="contact_board" src="img/migd_board.svg">
+            </div>
+            <div class="mihead">
+                <h1> MIs & GDs </h1>
             </div>
             <div class="col-md-4">
                 <div class="white_bg">
@@ -143,7 +156,8 @@
             <img src="mobimg/rg.svg">
         </div>
     </div> -->
-    <nav id="cd-vertical-nav">
+   <div class="desktop">
+        <nav id="cd-vertical-nav">
         <ul type="none">
             <li>
                 <a href="#home" data-number="1">
@@ -179,7 +193,11 @@
             </li>
         </ul>
     </nav>
+   </div>
     <div class="home" id="home">
+        <div class="mobbranding">
+            <img src="mobimg/branding.svg">
+        </div>
         <div class="mobilehome">
             <img src="mobimg/mobhome.svg">
         </div>
@@ -230,6 +248,14 @@
     <div id="alum_fix">
     </div>
     <div class="alum">
+       <!--  <div class="mobtext"> -->
+            <!--  <h1>
+                    Outshine your future.
+                </h1>
+                <p>
+                    The 'Piece de Resistance' of SARC, Alumination is IIT Bombay's largest platform for bilateral exchage between the IITB alumni and students on a spectrum spanning <span  id="usp">Career Guidance, Corporate Exposure, Life Learning and Motivational Talks</span>.
+                </p> -->
+        <!-- </div> -->
         <div class="mobpg2">
             <img src="mobimg/background.svg">
         </div>
@@ -327,7 +353,7 @@
             <div class="col-sm-7">
                 <div id="schedule" class="carousel slide" data-interval="false" data-ride="carousel">
                     <div class="carousel-inner caro" role="listbox">
-                        <div class="carousel-item active">
+                        <div class="carousel-item mob active">
                             <img class="d-block w-100" src="img/day0.jpg" alt="day0">
                             <div class="carousel-caption">
                                 <h1>DAY 0</h1>
@@ -345,6 +371,10 @@
                                 <h1>DAY 2</h1>
                             </div>
                         </div>
+                    </div>
+                    <div class="mobday">
+                    	<a class="carousel-control-prev" href="#schedule" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a>
+					<a class="carousel-control-next" href="#schedule" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></a>
                     </div>
                     </div>
             </div>
@@ -375,25 +405,32 @@
                 <h3 id="text_mi">MIs & GDs</h3>
                 </a>
             </div>
-            <div class="backdrop">
+            <div class="desktop">
+            	<div class="backdrop desktop">
                     <img src="img/footer.svg">
-                </div>  
+            </div>
+            </div>
+
         </div>
     </div>
     <div class="footer" id="contacts">
+        <div class="mobfooter">
+                <img src="mobimg/mobfooter.svg">
+            </div> 
         
-        <div class="row">
+        <div class="row foot">
                 
             <div class="col-sm-4 btn" class="contacts_container" id="contacts_toggle" style="color:#051932; font-size: 45px;padding: 19px;float: left;">
-                    Contacts.
+                  <div class="con"> Contacts.</div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 desktop">
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 ">
                 <a href="https://sarc-iitb.org/" target="_blank" style="float: right; font-size: 30px; padding:35px; ">
-                    &copy SARC 2018
+                   <div class="saarc"> &copy SARC 2018</div>
                 </a>
-            </div>      
+            </div>   
+
         </div>
     </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
