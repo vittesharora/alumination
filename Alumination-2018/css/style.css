@@ -1053,6 +1053,15 @@ h1{
   background-color: #051932;
   }
 }
+@media only screen and (max-width: 1300px){
+  .list_item ul{
+  padding-right: 10px;
+  list-style: none;
+  float: right;
+  text-align: left;
+  width: 400px !important;
+  }
+}
 @media only screen and (max-width: 1180px) {
   .events{
     margin-top: -30%;
@@ -1085,6 +1094,24 @@ h1{
     margin-right: 55px;
     font-family: poppins-bold;
   }
+  .list_item ul{
+    padding-right: 10px;
+    list-style: none;
+    float: right;
+    text-align: left;
+    width: 300px !important;
+    font-size: 20px !important;
+  }
+ .list_item{
+    margin-left: 80px;
+  }
+ .list_item li{
+    font-size: 20px !important;
+  }
+ .list_item img{
+    height: 20px !important;
+    width: auto;
+ }
 }
 @media only screen and (max-width: 1090px) {
   .alum{
@@ -1255,6 +1282,23 @@ h1{
     }
   .list_item ul{
     padding-right: 10px;
+  }
+  .list_item{
+  margin-left: 100px;
+  }
+  .list_item li{
+  font-size: 12px !important;
+  }
+  .list_item img{
+  margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 800px){
+  .items{
+    width: 200px;
+    height: 500px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 @media only screen and (max-width: 768px) {
