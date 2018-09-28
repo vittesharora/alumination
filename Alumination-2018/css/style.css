@@ -14,11 +14,15 @@ body {
 ::-webkit-scrollbar{
     display:none;
 }
+.btn{
+  font-size: 40px;
+}
 .facebook{
   height: 40px;
   width: 40px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 20px;
 }
 
 .mobday{
@@ -1658,7 +1662,7 @@ h1{
   }
   .con{
     margin-top: 80px;
-    font-size: 20px;
+    font-size: 20px !important;
     color: #0056b6 ;
   }
   .saarc{
