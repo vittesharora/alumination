@@ -93,6 +93,12 @@ $(document).ready(function(){
            $("#item6").css({
             'opacity':'0'
         });
+        $("#item7").css({
+          'opacity':'0'
+        });
+        $("#item8").css({
+          'opacity':'0'
+        });
         $('#item1').css({
           'opacity':'1',
             });
@@ -109,6 +115,8 @@ $(document).ready(function(){
         $('#item1').fadeIn(100);
         $('#item2').fadeOut(100);
         $('#item3').fadeOut(100);
+         $('#item7').fadeOut(100);
+        $('#item8').fadeOut(100);
         $('#item4').fadeOut(100);
         $('#item5').fadeOut(100);
         $('#item6').fadeOut(100);   
@@ -129,7 +137,12 @@ $(document).ready(function(){
         $("#item6").css({
             'opacity':'0'
         });
-        
+         $("#item7").css({
+          'opacity':'0'
+        });
+        $("#item8").css({
+          'opacity':'0'
+        });
          $('#item2').css({
           'opacity':'1'
         });
@@ -142,6 +155,8 @@ $(document).ready(function(){
     
       $('#item2').fadeIn(100);
         $('#item1').fadeOut(100);
+        $('#item7').fadeOut(100);
+        $('#item8').fadeOut(100);
         $('#item3').fadeOut(100);
          $('#item4').fadeOut(100);
         $('#item5').fadeOut(100);
@@ -164,6 +179,12 @@ $(document).ready(function(){
         $("#item6").css({
             'opacity':'0'
         });
+         $("#item7").css({
+          'opacity':'0'
+        });
+        $("#item8").css({
+          'opacity':'0'
+        });
         $('#item3').css({
             'opacity':'1',
             });
@@ -176,6 +197,8 @@ $(document).ready(function(){
         $('#item3').fadeIn(100);
         $('#item1').fadeOut(100);
         $('#item2').fadeOut(100);
+         $('#item7').fadeOut(100);
+        $('#item8').fadeOut(100);
         $('#item4').fadeOut(100);
         $('#item5').fadeOut(100);
         $('#item6').fadeOut(100);  
@@ -196,6 +219,12 @@ $(document).ready(function(){
         $("#item6").css({
             'opacity':'0'
         });
+         $("#item7").css({
+          'opacity':'0'
+        });
+        $("#item8").css({
+          'opacity':'0'
+        });
         $('#item4').css({
             'opacity':'1',
             });
@@ -210,6 +239,8 @@ $(document).ready(function(){
         $('#item2').fadeOut(100);
         $('#item3').fadeOut(100);
         $('#item5').fadeOut(100);
+         $('#item7').fadeOut(100);
+        $('#item8').fadeOut(100);
         $('#item6').fadeOut(100);  
     });
      $("#item_five").click(function(){
@@ -228,6 +259,12 @@ $(document).ready(function(){
         $("#item6").css({
             'opacity':'0'
         });
+         $("#item7").css({
+          'opacity':'0'
+        });
+        $("#item8").css({
+          'opacity':'0'
+        });
         $('#item5').css({
             'opacity':'1',
             });
@@ -242,7 +279,9 @@ $(document).ready(function(){
         $('#item2').fadeOut(100);
         $('#item4').fadeOut(100);
         $('#item3').fadeOut(100);
-        $('#item6').fadeOut(100);  
+        $('#item6').fadeOut(100); 
+         $('#item7').fadeOut(100);
+        $('#item8').fadeOut(100); 
     }); 
      $("#item_six").click(function(){
         $("#item1").css({
@@ -260,6 +299,12 @@ $(document).ready(function(){
         $("#item5").css({
             'opacity':'0'
         });
+         $("#item7").css({
+          'opacity':'0'
+        });
+        $("#item8").css({
+          'opacity':'0'
+        });
         $('#item6').css({
             'opacity':'1',
             });
@@ -274,6 +319,90 @@ $(document).ready(function(){
         $('#item2').fadeOut(100);
         $('#item4').fadeOut(100);
         $('#item5').fadeOut(100);
+         $('#item7').fadeOut(100);
+        $('#item8').fadeOut(100);
         $('#item3').fadeOut(100);  
+    }); 
+     $("#item_seven").click(function(){
+        $("#item1").css({
+            'opacity':'0'
+        });
+        $("#item2").css({
+            'opacity':'0'
+        });
+        $("#item3").css({
+            'opacity':'0'
+        });
+        $("#item4").css({
+            'opacity':'0'
+        });
+        $("#item6").css({
+            'opacity':'0'
+        });
+        $("#item5").css({
+            'opacity':'0'
+        });
+        $("#item8").css({
+            'opacity':'0'
+        });
+        $('#item7').css({
+            'opacity':'1',
+            });
+        $('#it7_desc').css({
+            'animation':'fade 1.5s',
+            'animation':'move .4s',
+            'transform':'translateY(20px)'
+        });
+        
+        $('#item7').fadeIn(100);
+        $('#item1').fadeOut(100);
+        $('#item2').fadeOut(100);
+        $('#item4').fadeOut(100);
+        $('#item3').fadeOut(100);
+        $('#item6').fadeOut(100); 
+        $('#item5').fadeOut(100);
+        $('#item8').fadeOut(100);
+ 
+    }); 
+          $("#item_eight").click(function(){
+        $("#item1").css({
+            'opacity':'0'
+        });
+        $("#item2").css({
+            'opacity':'0'
+        });
+        $("#item3").css({
+            'opacity':'0'
+        });
+        $("#item4").css({
+            'opacity':'0'
+        });
+        $("#item6").css({
+            'opacity':'0'
+        });
+        $("#item5").css({
+            'opacity':'0'
+        });
+        $("#item7").css({
+            'opacity':'0'
+        });
+        $('#item8').css({
+            'opacity':'1',
+            });
+        $('#it8_desc').css({
+            'animation':'fade 1.5s',
+            'animation':'move .4s',
+            'transform':'translateY(20px)'
+        });
+        
+        $('#item8').fadeIn(100);
+        $('#item1').fadeOut(100);
+        $('#item2').fadeOut(100);
+        $('#item4').fadeOut(100);
+        $('#item3').fadeOut(100);
+        $('#item6').fadeOut(100); 
+        $('#item5').fadeOut(100);
+        $('#item7').fadeOut(100);
+ 
     }); 
 });
