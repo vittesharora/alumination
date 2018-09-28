@@ -16,6 +16,8 @@ body {
 }
 .btn{
   font-size: 40px;
+  float: left;
+  margin-top: -24px;
 }
 .facebook{
   height: 40px;
@@ -24,7 +26,9 @@ body {
   margin-right: 10px;
   margin-top: 20px;
 }
-
+.mob{
+	display: none;
+}
 .mobday{
   display: none;
 }
@@ -130,7 +134,8 @@ body {
   z-index: 5;
 }
 .day h1{
-  font-size: 60px;
+  font-size: 80px;
+  margin-left: -600px;
 }
 .footer .row{
   margin-right:0;
@@ -287,7 +292,7 @@ h1 {
   width: 3%;
   height: auto;
   z-index: 7;
-  margin-top: 0.5%;
+  margin-top: 1.5%;
   margin-left: 2%;
   cursor: pointer;
 }
@@ -411,7 +416,7 @@ z-index: -5;
   position: absolute;
   z-index: 3;
   margin-top: 29%;  
-  margin-left: 43.5%;
+  margin-left: 41.5%;
   width: 13%;
 }
 #textpg1{
@@ -423,12 +428,14 @@ z-index: -5;
   padding-left: 5%;
   margin-right: 55px;
   font-family: poppins-bold;
+  text-align: left;
 }
 #usp {
   color: #3AC6F4;
 }
 #textpg1 h1{
   color: #051932;
+  text-align: left;
 }
 #textpg1 p{
   color: #051932;
@@ -598,9 +605,12 @@ z-index: -5;
   background-color: #051932;
   height: auto;
   width: auto;
-  cursor: pointer;}
+  cursor: pointer;
+	z-index: 3;
+}
 .container{
   background-color: #051932;
+  margin-left: 8%;
 }
 .items p{
   color: white;
@@ -705,6 +715,7 @@ h1{
   float: right;
   text-align: left;
   width: 500px;
+  margin-top: -142px;
 }
 
 #ev1{
@@ -757,7 +768,7 @@ h1{
 }
 #eventshead{
   font-size: 80px;
-  margin-left: 9.5%;
+  margin-left:7%;
   margin-top: 5%;
   z-index: 5;
   font-family:poppins-bold;
@@ -869,6 +880,7 @@ h1{
 }
 .row a{
    text-decoration: none;
+   float
 }
 #reg_works img:hover ~ #text_works{
   opacity: 2;
@@ -879,7 +891,11 @@ h1{
 #reg_mi img:hover ~ #text_mi{
   opacity: 2;
 }
-
+.social{
+	margin-top: 28px;
+	float: left;
+	margin-left: -216px;
+}
 .wtpattern{
     margin-top: -8%;
     position: relative;
@@ -888,6 +904,9 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #051932;
+}
+.contacts_toggle{
+	float: left;
 }
 .contacts_container {
   position: fixed;
@@ -1005,8 +1024,8 @@ h1{
 }
 #stand{
   position: relative;
-  height: 100%;
-  margin-top: 10%;
+  height: 130%;
+  margin-top: 20%;
   right: 0;
   left: 0;
   margin-left:-100%;
@@ -1022,14 +1041,14 @@ h1{
 #middle{
   position: relative;
   margin-top:-17.500px;
-  margin-left: -154px;
+  margin-left: -144px;
   height: 20%;
 }
 
 #bottom {
   position: relative;
   margin-top: 133px;
-  margin-left: -133px;
+  margin-left: -122px;
   height: 20%;
 }
 
@@ -1131,7 +1150,7 @@ h1{
   list-style: none;
   float: right;
   text-align: left;
-  width: 400px !important;
+  width: 400px;
   }
 }
 @media only screen and (max-width: 1180px) {
@@ -1171,7 +1190,7 @@ h1{
     list-style: none;
     float: right;
     text-align: left;
-    width: 300px !important;
+    width: 300px;
     font-size: 20px !important;
   }
  .list_item{
@@ -1231,7 +1250,6 @@ h1{
   .items{
   margin-left:-12%;
   }
-  
 }
 @media only screen and (max-width: 950px) {
   .alum{
@@ -1403,9 +1421,23 @@ h1{
 @media only screen and (max-width: 768px) {
   .overlay nav{
     top:42%;
+    font-size: 36px;
+  }
+  .wtpattern{
+  	margin-top: 5%;
+  	margin-bottom:20%;
   }
   .button_container.active .top{
     transform: translateY(8px) translateX(0) rotate(45deg);
+  }
+  .mob{
+  	display: block;
+  }
+  .mobday .carousel-control-prev{
+	left: -20px;
+  }
+  .mobday .carousel-control-next{
+	right: -20px;
   }
   .reg img{
     padding-top: 0px ;
@@ -1477,6 +1509,7 @@ h1{
     text-align: center;
     width: 350px;
     margin:0;
+    display: none;
     text-align:left;
   }
   #item3{
@@ -1486,6 +1519,7 @@ h1{
     width: 350px ;  text-align: center;
     margin:0;
     text-align:left;
+    display: none;
   }
   #item4{
     background-color:#051932;
@@ -1494,6 +1528,7 @@ h1{
     width: 350px ;  text-align: center;
     margin:0; 
     text-align:left;
+    display: none;
   }
   #item5{
     background-color:#051932;
@@ -1502,6 +1537,7 @@ h1{
     width: 350px ;  text-align: center;
     margin:0;
     text-align:left;
+    display: none;
   } 
   #item6{
     background-color:#051932;
@@ -1510,6 +1546,7 @@ h1{
     width: 350px ;  text-align: center;
     margin:0;
     text-align:left;
+    display: none;
   }
    #item7{
     background-color:#051932;
@@ -1518,6 +1555,7 @@ h1{
     width: 350px ;  text-align: center;
     margin:0;
     text-align:left;
+    display: none;
   }
    #item8{
     background-color:#051932;
@@ -1526,6 +1564,7 @@ h1{
     width: 350px ;  text-align: center;
     margin:0;
     text-align:left;
+    display: none;
   }
   #item_one{
     margin:10px;
@@ -1591,6 +1630,10 @@ h1{
     margin:5px;
     width: auto;
   }
+  .list_item{
+  	margin-left:0px;
+  	width: 100%;
+  }
   .list_item strong{
     font-size: 25px;
   }
@@ -1599,8 +1642,13 @@ h1{
   }
   .list_item ul{
     padding: 0px;
+    width: 100%;
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+  }
+  .container{
+  	margin-left: 0;
   }
   .reg {
     padding: 0;
@@ -1662,7 +1710,7 @@ h1{
   }
   .con{
     margin-top: 80px;
-    font-size: 20px !important;
+    font-size: 25px;
     color: #0056b6 ;
   }
   .saarc{
@@ -1702,19 +1750,33 @@ h1{
     width: 100%;
   }
   .foot img{
-    height: 1000px;
+    
   }
   .foot .col-sm-4:nth-of-type(1){
     padding:0;
+	position: absolute;
+	margin-top: 12%;
   }
   .foot .col-sm-4:nth-of-type(3){
     padding: 0;
     height: 100%;
+    margin-top: 29%;
+    position: absolute;
+  }
+  .social{
+  	margin-left: -148px;
+  	margin-top: 11%;
+  }
+  .social img{
+  	width: 25px;
+  	height: 25px;
+  	margin-left: 5px;
+  	margin-right: 5px;
   }
   .con{
     float: left;
-    margin-left: 10px;
-    margin-top:13%;
+    margin-left: 0px;
+    margin-top:15%;
     margin-bottom: 8%;
   }
   .foot a{
@@ -1740,6 +1802,7 @@ h1{
   #eventshead{
     margin-left: 0;
     margin-top: 0;
+    font-size: 60px;
   }
   #item1{
     width: 100%
@@ -1766,6 +1829,11 @@ h1{
     width: 100%
   }
 }
-@media only screen and (max-width: 360px) {
-  
+@media only screen and (max-width: 330px) {
+	.reg h1{
+		font-size: 40px;
+	}
+	.con{
+		font-size: 20px;
+	}
 }
